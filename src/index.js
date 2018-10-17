@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'mobx-react';
 import CatalogBeer from './Components/CatalogBeer/CatalogBeer';
-import ListBeers from './stores/ListBeers';
+import InfoBeers from './stores/InfoBeers';
+import Filter from './stores/Filter';
+import './index.sass';
 
-const listBeers = new ListBeers();
+const infoBeers = new InfoBeers();
+const filter = new Filter();
 
 const Main = () => (
     <Provider 
-        listBeers = {listBeers}
+        infoBeers = {infoBeers}
+        filter = {filter}
     >
         <CatalogBeer />
     </Provider>

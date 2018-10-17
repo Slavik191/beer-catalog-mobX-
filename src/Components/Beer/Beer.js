@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { inject, observer } from 'mobx-react';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
-//import './Beer.sass';
+import './Beer.sass';
+
+@inject('infoBeers')
+@observer
 
 class Beer extends Component {
     beerInfo = () => {
-        
+        this.props.infoBeers.newBeerInfo(this.props.beer);
     }
 
     render() {
@@ -23,4 +27,4 @@ class Beer extends Component {
     }
 }
 
-export default Beer
+export default Beer;

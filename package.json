@@ -2,7 +2,7 @@
   "name": "mobx-react-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "start": "webpack-dev-server -w --mode development"
   },
@@ -27,6 +27,10 @@
   },
   "devDependencies": {
     "@material-ui/core": "^3.2.2",
-    "@material-ui/icons": "^3.0.1"
+    "@material-ui/icons": "^3.0.1",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
   }
 }
